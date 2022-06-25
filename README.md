@@ -1,15 +1,10 @@
 <h1 align="center">Welcome to movies app 👋</h1>
-<p>
-  <a  target="_blank">
-    <img alt="Documentation" src="./src/images/Capture.png"  />
-  </a>
-
-</p>
 
 > Tailwind app. Prototype of movies.
+> <br>
 > search,
 > filter by title,
-> regex on input
+> and regex on input
 
 ## Install
 
