@@ -1,12 +1,15 @@
-<h1 align="center">Welcome to Review app 👋</h1>
+<h1 align="center">Welcome to movies app 👋</h1>
 <p>
   <a  target="_blank">
-    <img alt="Documentation" src="./src/images/Capture.png" />
+    <img alt="Documentation" src="./src/images/Capture.png"  />
   </a>
 
 </p>
 
 > Tailwind app. Prototype of movies.
+> search,
+> filter by title,
+> regex on input
 
 ## Install
 

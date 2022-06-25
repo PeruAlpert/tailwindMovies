@@ -6,91 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
 </head>
+<!-- bg-[#0d0d0d] -->
 
-<body class="text-slate-400">
-    <!-- header -->
-    <div class="bg-gray-200">
-        <div class="container py-9 flex justify-between items-center">
-            <div>
-                <h1 class="text-slate-800 font-bold text-3xl">Socaial media dashboard</h1>
-                <span class="text-sm">Yotal followers : 12.123</span>
-            </div>
-            <div>
-                <label class="mx-2" htmlFor="checkbox">dark mode</label>
-                <span>
-                    <input id="checkbox" type="checkbox" />
-                </span>
-            </div>
-        </div>
-    </div>
+<body class="bg-[#0d0d0d]">
+    <div class="flex bg-[#0d0d0d]">
+        <!-- side bar -->
+        <div class="fixed z-10">
+            <button
+                class="bg-hamburger text-black w-[28px] h-full bg-no-repeat bg-center m-[14px] ml-3 absolute top-0 peer text-4xl"
+                id="button_aside">≡</button>
+            <div id="sideBar"
+                class="h-[100vh] bg-white w-12 z-0 left-9 peer-focus:ml-[228px] ease-out delay-150 duration-300 text-center flex flex-col justify-between">
+                <img src="images/logo.png" class="p-2">
+                <h1 class="text-3xl hidden  peer-focus:contents ">X</h1>
 
-
-    <!-- main card-->
-    <div class="container">
-        <!-- card -->
-        <div class="bg-bg-card text-center py-6 rounded">
-            <div class="flex items-center justify-center gap-1">
-                <span>
-                    <p>F</p>
-                </span>
-                <span>@abcd</span>
-            </div>
-            <h2>1987</h2>
-            <p>followers</p>
-            <div>
-                <span>
-                    <p>^</p>
-                    <span>today</span>
-                </span>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- cards two -->
-    <div class="container mt-6">
-        <button class="bg-blue-500 hover:bg-slate-400 text-white font-bold py-2 px-2">find fried</button>
-        <button class="btn btn-blue">find fried</button>
-
-        <!-- alert -->
-        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative my-5">
-            <strong class="font-bold"> Alert!</strong>
-            <span class="block sm:inline">please update your password</span>
-        </div>
-    </div>
-    <div class="max-w-sm mx-auto flex  p-6 bg-white rounded-lg shadow-xl">
-        <div class="flex-shrink-0">
-            <img src="./images/test.png" alt="test" class="h-12 w-12">
-        </div>
-        <div class="ml-6">
-            <h4 class="text-xl text-gray-900">traversy media</h4>
-            <p class="text-base text-gray-600">you have a new message</p>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="md:flex ">
-            <div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
-                <div class="flex-shrink-0">
-                    <img src="./images/test.png" alt="test" class="h-12 w-12">
-                </div>
-                <div class="ml-6">
-                    <h4 class="text-xl text-gray-900">traversy media</h4>
-                    <p class="text-base text-gray-600">you have a new message</p>
+                <div class="items-center text-center flex flex-col align-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-globe text-black" viewBox="0 0 16 16">
+                        <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-share my-5 text-black" viewBox="0 0 16 16">
+                        <path
+                            d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                    </svg>
                 </div>
             </div>
-            <div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
-                <div class="flex-shrink-0">
-                    <img src="./images/test.png" alt="test" class="h-12 w-12">
-                </div>
-                <div class="ml-6">
-                    <h4 class="text-xl text-gray-900">traversy media</h4>
-                    <p class="text-base text-gray-600">you have a new message</p>
-                </div>
-            </div>
+            <aside
+                class="grid fixed top-0 bg-black w-[233px] h-full -left-[233px] peer-focus:left-0 ease-out delay-150 duration-300 "
+                id="aside">
+                <div class="nav-tab-menu" id="nav-tab-menu">
+                    <div class="nav-item">
+                        <ul class="text-white">
+                            <li class="nav-item1 list-unstyled"><a class="nav-category text-decoration-none" href="#"
+                                    id="now_playing">Now playing</a></li>
+                            <li class="nav-item2 list-unstyled"><a class="nav-category text-decoration-none" href="#"
+                                    id="popular">Popular</a></li>
+                            <li class="nav-item3 list-unstyled"><a class="nav-category text-decoration-none" href="#"
+                                    id="top_rated">Top Rated</a></li>
+                            <li class="nav-item4 list-unstyled"><a class="nav-category text-decoration-none" href="#"
+                                    id="trending/all/day">Trending</a></li>
+                            <li class="nav-item5 list-unstyled"><a class="nav-category text-decoration-none" href="#"
+                                    id="upcoming">Upcoming</a></li>
+                            <li class="nav-item6 list-unstyled"><a class="nav-category text-decoration-none"
+                                    href="#contact">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-social-item">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                        <div class="pt-3">
+                            <span>Copyright © 2019 All Rights Reserved.</span>
+                        </div>
 
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <!--  -->
+        <!-- movies -->
+        <div class="container mx-auto px-36 py-20">
+            <di class="grid gap-6 mb-6 lg:grid-cols-2">
+                <div>
+
+                    <input type="text" id="api"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="search from api">
+                </div>
+                <div>
+
+                    <input type="text" id="word"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="filter by title">
+                </div>
+
+            </di>
+            <div class="flex flex-wrap -mx-4" id="here"></div>
+            <di class="grid gap-6 mb-6 lg:grid-cols-2">
+                <div>
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-first-name" id="nameVal">
+                        First Name
+                    </label>
+                    <input type="text" id="name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="enter your name">
+                </div>
+                <div>
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-first-name" id="phoneVal">
+                        phone
+                    </label>
+                    <input type="text" id="phone"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="enter your phone">
+                </div>
+            </di>
         </div>
 
     </div>
+    <!-- id="here" -->
+
+
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./mine.js" type="module"></script>
 </body>
 
 </html>
